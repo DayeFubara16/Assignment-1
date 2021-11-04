@@ -9,6 +9,9 @@ public class CommandInvoker : MonoBehaviour
     static List<ICommand> commandHistory;
     static int counter;
 
+    //adding flag 
+    private bool flag_ = false;
+
     private void Awake() 
     {
         commandBuffer = new Queue<ICommand>();
@@ -54,6 +57,24 @@ public class CommandInvoker : MonoBehaviour
                     counter++;
                 }
             }
+        }
+
+        //this is where the clear with the flag takes place 
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            flag_ = true;
+        }
+
+        if (flag_ == true)
+        {
+            do
+            {
+                counter--;
+                commandHistory[counter].Undo();
+
+            } while (counter > 0);
+
+            flag_ = false;
         }
     }
 }

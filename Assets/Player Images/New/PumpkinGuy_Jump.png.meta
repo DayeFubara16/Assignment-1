@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -376,6 +377,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      PumpkinGuy_Jump_3: 8313858138239914224
+      PumpkinGuy_Jump_6: -7263798108098365034
+      PumpkinGuy_Jump_4: 8234465364208480930
+      PumpkinGuy_Jump_8: -614206620234185311
+      PumpkinGuy_Jump_2: -4755463055670494973
+      PumpkinGuy_Jump_0: -3957742889755224249
+      PumpkinGuy_Jump_7: 2472790309105940390
+      PumpkinGuy_Jump_5: 3245251585965129959
+      PumpkinGuy_Jump_1: 6051915743516036836
+      PumpkinGuy_Jump_9: -7697423057068288114
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

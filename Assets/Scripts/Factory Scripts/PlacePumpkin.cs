@@ -6,7 +6,6 @@ public class PlacePumpkin : MonoBehaviour
 {
     public Transform spawnPoint;
     public Sprite image;
-
     public void pumpkinClick()
     {
         PumpkinObject pumpkin = new PumpkinObject();

@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      PumpkinGuy_Idle_4: -4183052934123760333
+      PumpkinGuy_Idle_1: -5658465792521447582
+      PumpkinGuy_Idle_3: 4312499187284811338
+      PumpkinGuy_Idle_0: 423197969089010793
+      PumpkinGuy_Idle_2: -3021885825694534556
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

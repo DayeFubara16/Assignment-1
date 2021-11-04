@@ -12,7 +12,6 @@ abstract public class ObjectFactory : MonoBehaviour
 public class PumpkinObject : ObjectFactory
 {
     static List<Transform> pumpkins;
-
     public override void createObject(Vector3 position, Transform cube, Sprite sprite)
     {
         Transform newpumpkin = Instantiate(cube, position, Quaternion.identity);
@@ -45,6 +44,5 @@ public class SkullObject : ObjectFactory
         skulls.Add(newSkull);
     }
 }
-
 
 
