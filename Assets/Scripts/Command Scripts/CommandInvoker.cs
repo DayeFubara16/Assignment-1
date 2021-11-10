@@ -12,6 +12,10 @@ public class CommandInvoker : MonoBehaviour
     //adding flag 
     private bool flag_ = false;
 
+    //adding decoupling stuff
+    public static event System.Action<string> PlatGone;
+    public static event System.Action<string> PlatBack;
+
     private void Awake() 
     {
         commandBuffer = new Queue<ICommand>();
@@ -47,6 +51,8 @@ public class CommandInvoker : MonoBehaviour
                 {
                     counter--;
                     commandHistory[counter].Undo();
+
+                    PlatGone?.Invoke("Block has been deleted");
                 }
             }
             else if (Input.GetKeyDown(KeyCode.R))
@@ -55,6 +61,8 @@ public class CommandInvoker : MonoBehaviour
                 {
                     commandHistory[counter].Execute();
                     counter++;
+
+                    PlatBack?.Invoke("Block has been retrieved");
                 }
             }
         }
